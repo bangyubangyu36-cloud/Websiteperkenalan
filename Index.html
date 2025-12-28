@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>selamat datang di web saya</title>
+<style>
+/* ================= RESET ================= */
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body{background:#f4f4f4;color:#333;}
+
+/* ================= HEADER ================= */
+header{
+  background:#fff;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:100;
+}
+.header-container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  max-width:1200px;
+  margin:0 auto;
+  padding:15px 20px;
+}
+.logo{
+  font-size:24px;
+  font-weight:bold;
+  color:#000;
+}
+.nav-menu{
+  display:flex;
+  gap:20px;
+}
+.nav-menu button{
+  background:none;
+  border:none;
+  font-size:16px;
+  cursor:pointer;
+  padding:5px 10px;
+  transition:0.3s;
+}
+.nav-menu button:hover, .nav-menu button.active{
+  color:#ff0000;
+  border-bottom:2px solid #ff0000;
+}
+
+/* ================= CONTENT ================= */
+main{
+  margin-top:80px;
+  max-width:1200px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:20px;
+}
+.content-section{
+  display:none;
+}
+.content-section.active{
+  display:block;
+}
+.content-section h2{
+  margin-bottom:15px;
+  color:#ff0000;
+}
+.article{
+  background:#fff;
+  padding:15px;
+  margin-bottom:15px;
+  border-radius:5px;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+.article h3{margin-bottom:8px;}
+.article p{font-size:14px;line-height:1.5;}
+
+/* ================= FOOTER ================= */
+footer{
+  background:#222;
+  color:#fff;
+  text-align:center;
+  padding:20px;
+  margin-top:20px;
+}
+footer a{color:#ff0000;text-decoration:none;}
+footer a:hover{text-decoration:underline;}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-container">
+    <div class="logo">portofolio</div>
+    <div class="nav-menu">
+      <button class="menu-btn active" data-target="hello">home</button>
+      <button class="menu-btn" data-target="About">About</button>
+      <button class="menu-btn" data-target="skills">skills</button>
+      <button class="menu-btn" data-target="portofolio">portofolio</button>
+      <button class="menu-btn" data-target="contact">Contact</button>
+    </div>
+  </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<main>
+<section id="hello" class="content-section active">
+  
+  <table>
+    <h2>Hello it's me</h2>
+  
+    <tr>
+      <td style="padding:15px; vertical-align: top;">
+        <h1>bayu abdi satria</h1>
+        <h3>And I am a Computer Science Student</h3>
+        <p>hallo..semuanya.perkenalkan saya bayu abdi satria,saya mahasiswa Diploma 3 (D3) Informatika. Saya memiliki minat besar dalam dunia komputer dan teknologi, terutama di bidang pengembangan web dan desain antarmuka (UI/UX</p>
+      </td>
+       <td style="padding:10px; width:150px; vertical-align: top;">
+      <img src="bayuaja.jpg" alt="bayu" style="width:150px; height:auto; border-radius:20px;">
+      <td style="padding:10px; vertical-align: top;">
+  </table>
+</section>
+
+  <section id="About" class="content-section">
+    <div class="article">
+<table>
+  <tr>
+    <td>
+      
+      <img src="bayuaja.jpg" alt="Foto" width="100">
+    </td>
+    <td style="vertical-align: middle; padding-left: 10px;">
+       <h2>About me</h2>
+     
+      <h3>Bayu abdi satria</h3>
+      <p>Tujuan saya adalah menjadi seorang profesional di bidang teknologi yang kreatif, inovatif, dan mampu memberikan kontribusi positif melalui proyek-proyek yang saya kerjakan.</p>
+    </td>
+  </tr>
+</table>
+    </div>
+  </section>
+
+  <section id="portofolio" class="content-section">
+    <h2>portofolio</h2>
+<div class="article">
+    <table>
+      <td>
+        <tr>
+          <img src="02.jpg" alt="Foto" width="100">
+           </td>
+    <td style="vertical-align: middle; padding-left: 10px;">
+      </td>
+      <h3>Website toko online</h3>
+      <p>membuat sebuah website e-commerce sederhana menggunakan HTML,CSS</p>
+        
+      </tr>
+      </td>
+      </table>
+    </div>
+    <div class="article">
+    <table>
+    <td>
+    <tr>
+     <img src="03.jpg" alt="Foto" width="100">
+      </td>
+    <td style="vertical-align: middle; padding-left: 10px;">
+    
+      <h3>Mini game</h3>
+      <p>membuat permainan tebak angka sederhana yang di buat dengan HTML dan CSS.</p>
+      
+      </tr>
+      </td>
+      </table>
+    </div>
+  </section>
+
+  <section id="skills" class="content-section">
+    <h2>my skills</h2>
+    <div class="article">
+      <h3>UX/UI Design</h3>
+      <p>UX/UI Design – “Membuat pengalaman digital yang intuitif dan ramah pengguna</p>
+    </div>
+    <div class="article">
+      <h3>Responsive Design</h3>
+      <p>Responsive Design – “Website yang tampil sempurna di semua perangkat.”</p>
+    </div>
+    </div>
+    <div class="article">
+      <h3>Prototyping & Wireframing </h3>
+      <p>Prototyping & Wireframing – “Menguji ide sebelum jadi desain final.”</p>
+    </div>
+  </section>
+
+  <section id="contact" class="content-section">
+    <h2>Contact</h2>
+    <div class="article">
+      <p>Email: contact@bayuabdisatria.com</p>
+      <p>Phone: 081371629638</p>
+      <p>Address: Kota pekanbaru, Indonesia</p>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  &copy; 2025 bayu abdi satria. All rights reserved. | <a href="#">Privacy Policy</a>
+</footer>
+
+<script>
+// Menu switching
+const menuBtns = document.querySelectorAll('.menu-btn');
+const sections = document.querySelectorAll('.content-section');
+
+menuBtns.forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    // Remove active from buttons
+    menuBtns.forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    // Show content
+    const target = btn.dataset.target;
+    sections.forEach(sec=>{
+      if(sec.id===target){
+        sec.classList.add('active');
+      }else{
+        sec.classList.remove('active');
+      }
+    });
+  });
+});
+</script>
+
+</body>
+</html>
